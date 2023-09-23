@@ -1,0 +1,425 @@
+@media screen and (min-width: 1200px){
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("banner\ enpty\ top\ crop2.png");
+    height: 10px; /* Adjust the size as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center top; /* Center the background image */
+    font-family: 'Luxurious Roman', cursive;
+}
+}
+.banner::before {
+    background-color: rgba(38, 53, 84, 0.314);
+    position: fixed;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #26355450; /* Adjust the opacity (0.5) to your liking */
+    z-index: -1; /* Place the pseudo-element behind the content */
+    border-bottom: 1px solid#02020253;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d4e6100;
+    padding:  10px;
+    color: #fff;
+    border-bottom: 0.01px solid#ffffff53;
+}
+.navbar-logo {
+    float: right;
+    padding: 1px;
+}
+
+.navbar-logo img {
+    max-height: 50px; /* Adjust the image size as needed */
+}
+
+
+.navbar-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-right: 20px;
+    padding: 10px ;
+}
+
+.navbar-item:last-child {
+    margin-right: 0;
+}
+.navbar-item:hover{
+    color: black;
+    font-style:inherit;
+    transform: scale(1.2);
+    background-color: #b3a66294;
+
+}
+.navbar-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.intro {
+    font-size: 24px;
+    padding: 50px;
+    position: relative;
+    font-family: 'Luxurious Roman', cursive;
+}
+.intro_text{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 130px;
+    margin-left: 100px;
+    
+}
+.heading{
+    font-size: 50px;
+    margin-top: 0;
+}
+.shop-now-button {
+    background-color: #4CAF50;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 13%; /* Center horizontally */
+    margin-left: 260px;
+}
+.shop-now-button:hover {
+    background-color: #ffd90094;
+    transform: scale(1.1);
+}
+.about-us{ /*image*/
+    background-image: url("about\ us\ image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center top;
+}
+.about-us{
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 15px;
+    margin-top: 255px;
+    margin-left: 150px;
+    color: rosybrown;
+    padding: 10px;
+    justify-content:flex-end; 
+    height: 600px; /* Adjust the height of the "About Us" section as needed */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    flex: 1;
+}
+.about-us-text{
+    color: #8E0D3C;
+    font-size: 20px;
+}
+.description{
+    color: black;
+    font-size: 15px;
+    flex:1;
+}
+.learn-more-button{
+    margin-left: -36px;
+    margin-top: -150px;
+    background-color: #4CAF50;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 13%; /* Center horizontally */
+        
+}
+.learn-more-button:hover {
+    background-color: 	#b76d68;
+    transform: scale(1.1);
+}
+
+
+.carousel {
+    background-color:  rgb(245, 245, 220);
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+  
+.carousel-cell {
+    width: 100%;
+    size: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+  
+.carousel-cell img{
+    width: 50%;
+    margin-top: 20px;
+  }
+.carousel-cell img:hover{
+    transform: scale(0.8);
+      overflow: hidden;
+}
+.slides{
+    margin-top: 80px;
+}
+.popular{
+    font-size: 30px;
+}
+.footer {
+    background-color: #838071e3;
+    color: white;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.footer-columns {
+    display: flex;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 30px;
+    align-items: center;
+}
+
+.footer-column a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.footer a:hover{
+    color: rgba(38, 67, 146, 0.863);
+}
+.bye-message{
+    font-size: 20px;
+}
+
+
+/*for mobile screen*/
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    
+    .navbar {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3d4e6100;
+        padding:  10px;
+        color: #fff;
+        border-bottom: 0.01px solid#ffffff53;
+    }
+    
+    .navbar-logo {
+        float: right;
+        padding: 1px;
+    }
+    
+    .navbar-logo img {
+        max-height: 50px;
+    }
+    
+    
+    .navbar-right {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .navbar-item {
+        margin-right: 20px;
+        padding: 10px ;
+        margin: 10px 0;
+    }
+    
+    .navbar-item:last-child {
+        margin-right: 0;
+    }
+    .navbar-item:hover{
+        color: black;
+        font-style:inherit;
+        transform: scale(1.2);
+        background-color: #b3a66294;
+    
+    }
+    .navbar-item a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .intro {
+        font-size: 24px;
+        padding: 50px;
+        position: relative;
+        font-family: 'Luxurious Roman', cursive;
+        padding: 20px;
+    }
+    .intro_text{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        margin-top: 130px;
+        margin-left: 100px;
+        
+    }
+    .heading{
+        font-size: 50px;
+        margin-top: 0;
+    }
+    .shop-now-button {
+        background-color: #4CAF50;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        position: absolute;
+        left: 13%; /* Center horizontally */
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .shop-now-button:hover {
+        background-color: #ffd90094;
+        transform: scale(1.1);
+    }
+    .about-us{ /*image*/
+        background-image: url("about\ us\ image.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        background-position: center top;
+    }
+    .about-us{
+        font-family: 'Luxurious Roman', cursive;
+        font-size: 15px;
+        margin-top: 255px;
+        margin-left: 150px;
+        color: rosybrown;
+        padding: 10px;
+        justify-content:flex-end; 
+        height: 600px; /* Adjust the height of the "About Us" section as needed */
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        flex: 1;
+    }
+    .about-us-text{
+        color: #8E0D3C;
+        font-size: 20px;
+    }
+    .description{
+        color: black;
+        font-size: 15px;
+        flex:1;
+    }
+    .learn-more-button{
+        margin-left: -36px;
+        margin-top: -150px;
+        background-color: #4CAF50;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        position: absolute;
+        left: 13%; /* Center horizontally */
+            
+    }
+    .learn-more-button:hover {
+        background-color: 	#b76d68;
+        transform: scale(1.1);
+    }
+    
+    * { box-sizing: border-box; }
+    
+    body { font-family: sans-serif; }
+    
+    .carousel {
+        background-color:  rgb(245, 245, 220);
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+      
+    .carousel-cell {
+        width: 100%;
+        size: 100%;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+      
+    .carousel-cell img{
+        width: 50%;
+        margin-top: 20px;
+      }
+    .carousel-cell img:hover{
+        transform: scale(0.8);
+          overflow: hidden;
+    }
+    .slides{
+        margin-top: 80px;
+    }
+    .popular{
+        font-size: 30px;
+    }
+    .footer {
+        background-color: #838071e3;
+        color: white;
+        margin-top: 100px;
+        padding: 50px;
+    }
+    
+    .footer-columns {
+        display: flex;
+    }
+    
+    .footer-column {
+        flex: 1;
+        margin: 30px;
+        align-items: center;
+    }
+    
+    .footer-column a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+    .footer a:hover{
+        color: rgba(38, 67, 146, 0.863);
+    }
+    .bye-message{
+        font-size: 20px;
+    }
+    /* For example, you can make elements stack vertically or adjust their sizes */
+    
+}
